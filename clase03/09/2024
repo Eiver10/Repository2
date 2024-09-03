@@ -1,0 +1,270 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Eiver10/Repository2/blob/main/clase03/09/2024\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print((3>5) and (5 == 6))\n",
+        "print((4 <= 6)or (7 != 7) )\n",
+        "print((4 + 2 *6 > 200 - 5 ** 2) and not (7 * 9 < 2 +3 ** 5))"
+      ],
+      "metadata": {
+        "id": "QCHVRxaruuxD",
+        "outputId": "0468f80a-0311-43db-f770-8c03f26897d6",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n",
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Condicional Basico (simple)\n",
+        "age = int(input(\"ingrese su edad:\"))\n",
+        "\n",
+        "if age >= 18:\n",
+        "  print(\"eres mayor de edad\")\n",
+        "else:\n",
+        "  print(\"eres menor de edad\")"
+      ],
+      "metadata": {
+        "id": "7Om__5EgwCMo",
+        "outputId": "f101beac-c430-4820-b637-925edc30ae7b",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ingrese su edad:20\n",
+            "eres mayor de edad\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Condicinal multiple\n",
+        "age = int(input(\"ingrese su edad:\"))\n",
+        "\n",
+        "if age < 18:\n",
+        "  print(\"eres joven\")\n",
+        "elif age <30:\n",
+        "  print(\"eres adulto joven\")\n",
+        "else:\n",
+        "  print(\"estas viejo\")"
+      ],
+      "metadata": {
+        "id": "6Nktzue0w8li",
+        "outputId": "de978968-83ca-427a-bfe0-fb503f632250",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ingrese su edad:20\n",
+            "eres adulto joven\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Ingrese el primer numero\"))\n",
+        "b = int(input(\"Ingrese el segundo numero\"))\n",
+        "c = int(input(\"Ingrese el tercer numero\"))\n",
+        "\n",
+        "if a >= b:\n",
+        "  if a >= c:\n",
+        "    print(\"a es el mayor:\", a)\n",
+        "  else:\n",
+        "    print(\"c es el mayor:\", c)\n",
+        "else:\n",
+        "  if b >= c:\n",
+        "    print(\"b es el mayor:\", b)\n",
+        "  else:\n",
+        "    print(\"c es el mayor:\", c)\n"
+      ],
+      "metadata": {
+        "id": "ChM80MDrz_Xq",
+        "outputId": "57572a29-0237-498c-8fac-fcb64b7fff82",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el primer numero6\n",
+            "Ingrese el segundo numero7\n",
+            "Ingrese el tercer numero8\n",
+            "c es el mayor: 8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nota = float(input(\"Ingrese su nota\"))\n",
+        "if nota >= 4.5:\n",
+        "  print(\"crack\")\n",
+        "elif nota >= 4.0:\n",
+        "  print(\"excelente\")\n",
+        "elif nota >= 3.5:\n",
+        "  print(\"bien\")\n",
+        "elif nota >= 3.0:\n",
+        "  print(\"regular\")\n",
+        "else:\n",
+        "  print(\"malo\")"
+      ],
+      "metadata": {
+        "id": "jL40FX2M5_p3",
+        "outputId": "554165da-b731-4420-d4ba-d94ce0977139",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese su nota4.01\n",
+            "excelente\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num = int(input(\"Ingrese su numero:\"))\n",
+        "if num % 2 == 0:\n",
+        "  print(\"el numero es par\")\n",
+        "else:\n",
+        "  print(\"el numero es impar\")\n",
+        "\n",
+        "  # print(\"es par\") if num % 2 == 0 else print(\"es impar\")"
+      ],
+      "metadata": {
+        "id": "PgeKTWjp8p6m",
+        "outputId": "aba1ab5c-9bd2-446a-e339-4a3e7a2b6cbb",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese su numero:3\n",
+            "el numero es impar\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from random import choice\n",
+        "\n",
+        "computer = choice([1, 2])\n",
+        "print(\"¿cara o sello\")\n",
+        "print(\"1. cara\")\n",
+        "print(\"2. sello\")\n",
+        "my_choice = int(input())\n",
+        "\n",
+        "if computer == my_choice:\n",
+        "  print(\"ganaste\")\n",
+        "else:\n",
+        "  print(\"perdiste\")"
+      ],
+      "metadata": {
+        "id": "SegASUg--BS2",
+        "outputId": "7b6782f8-bc0a-4f43-a32e-38a281d43f31",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 66,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "¿cara o sello\n",
+            "1. cara\n",
+            "2. sello\n",
+            "2\n",
+            "ganaste\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "gender = input(\"Ingrese su genero (M/F):\")\n",
+        "AGE = int(input(\"Ingrese \"))"
+      ],
+      "metadata": {
+        "id": "58s20g74BrF9"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Te damos la bienvenida a Colaboratory",
+      "toc_visible": true,
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
